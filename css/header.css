@@ -1,0 +1,48 @@
+header{
+    background-color: white;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0  0.25rem 0.25rem 0 rgba(50, 50, 50, 0.3);
+    z-index: 100;
+}
+
+.head {
+    height: 3rem;
+}
+.head a {
+display: block;
+color: deepskyblue;
+height: 2.2rem;
+padding-top: 0.8rem;
+transition: background-color 0.5s, color 0.5s;
+font-size: 1rem;
+}
+
+.head a:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+.logo>a{
+    display: block;
+    font-family:  Brush Script MT, cursive;
+    padding: 0;
+    font-weight: bold;
+    height: 3rem;
+}
+.submenu {
+    display: none;
+}
+.submenu a{
+    background-color: white;
+    padding: 0.1rem;
+    font-size: 0.7rem;
+    height: auto;
+
+}
+.logo:hover .submenu
+{
+    display: block;
+}

@@ -1,0 +1,79 @@
+aside{
+    margin-top: 3.5rem;
+
+}
+
+aside img {
+    width: 5rem;
+    height: auto;
+    transition: all 0.3s;
+}
+.aside>p
+{font-size: 0.8rem; color: dodgerblue; font-weight: bold;}
+.aside>div
+{
+    margin: 0.4rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    position: relative;
+    z-index: 98;
+    box-shadow: 0 0 0.15rem 0.025rem rgba(30, 144, 255, 0.6);
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.aside>div p
+{
+    margin: 0;
+}
+.aside>div:hover{
+    box-shadow: 0 0 0.15rem 0.05rem rgba(255, 215, 0, 1);
+}
+.aside{
+    margin: 0.8rem;
+    background-color: whitesmoke;
+    border-radius: 0.4rem;
+}
+
+.aside>div:hover img
+{
+    transform: rotate(5deg) scale(1.05);
+}
+.aside>div a :nth-child(2) {
+    color:dodgerblue;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    font-size: 0.6rem;
+}
+.aside>div a :last-child {
+    color: gold;
+    font-weight: bolder;
+    margin-bottom: 0.2rem;
+    font-size: 0.5rem;
+}
+.right .aside>div a :nth-child(3){
+    color: green;
+    font-weight: bolder;
+    font-size: 0.4rem;
+}
+.left .aside>div
+{
+    margin-top: 0.7rem;
+}
+
+aside div:first-child {
+    background-color: deepskyblue;
+    border-radius: 0.7rem;
+    margin: 0.4rem;
+    transition: all 0.2s;
+}
+aside div:first-child>a
+{
+    margin: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: white;
+    display: block;
+}
+aside div:first-child:hover {
+    background-color: orange;
+}

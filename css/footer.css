@@ -1,0 +1,27 @@
+footer
+{
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-top: 0.05rem solid dodgerblue;
+}
+footer h4>a {
+    color: black;
+    font-size: 0.7rem;
+    display: block;
+}
+
+.social a {
+    height:  60px;
+    width:  60px;
+    display: inline-block;
+    background: url(../img/icon/sprites.png);
+    background-repeat: no-repeat;
+    border-radius: 50% 50%;
+    transform: scale(0.7);
+}
+.social a.vk {
+    background-position:  -87px -11px;
+}
+.social a.inst {
+    background-position:  -163px -86px;
+}

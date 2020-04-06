@@ -1,0 +1,98 @@
+.modalauth {
+    position: fixed;
+    top: -100%;
+    width: 25%;
+    height: 20%;
+    left: 37%;
+    padding: 0;
+    transition: top 0.5s;
+    z-index: 101;
+}
+.modalauth:target {
+    top: 30%;
+}
+
+.close-modal {
+    color: gold;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    font-size: small;
+    font-weight: bold;
+}
+
+.modalreg {
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    top: 15%;
+    right: -30%;
+    padding: 0;
+    z-index: 101;
+    transition: right 0.5s;
+}
+
+.modalreg:target {
+    right: 35%;
+}
+
+.writeus{
+    position: fixed;
+    width: 40%;
+    height: 30%;
+    bottom: -30%;
+    left: 30%;
+    padding: 0;
+    transition: bottom 0.5s;
+    z-index: 99;
+}
+.writeus:target {
+    bottom: 50%;
+}
+.wrsaler{
+    position: fixed;
+    width: 40%;
+    height: 30%;
+    bottom: -30%;
+    left: 30%;
+    padding: 0;
+    transition: bottom 0.5s;
+    z-index: 98;
+}
+.wrsaler:target {
+    bottom: 50%;
+}
+
+.addprodsec {
+    position: fixed;
+    top: 3rem;
+    width: 60%;
+    left: -100%;
+    padding: 0;
+    z-index: 101;
+    transition: left 0.5s;
+}
+.addprodsec:target{
+    left: 0;
+}
+.addprodsec p{
+    margin: 0.2rem;
+    font-weight: bolder;
+}
+
+.addlotsec {
+    position: fixed;
+    top: 3rem;
+    width: 60%;
+    right: -100%;
+    padding: 0;
+    z-index: 100;
+    transition: right 0.5s;
+}
+.addlotsec:target{
+    right: 0;
+}
+.addlotsec p{
+    margin: 0.2rem;
+    font-weight: bolder;
+}

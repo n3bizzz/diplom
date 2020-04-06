@@ -1,0 +1,482 @@
+@import "header.css";
+@import "flex.css";
+@import "form.css";
+@import "main.css";
+@import "grid.css";
+@import "footer.css";
+@import "aside.css";
+@import "modal.css";
+html { scroll-behavior: smooth; font-size: 20px; font-family: "Verdana";}
+body {
+ background-color: rgba(255, 215, 0, 0.5);
+ margin: 0;
+}
+
+.content-center {
+ text-align: center;
+}
+.align-left{text-align: left}
+.align-right{text-align: right}
+a {
+ text-decoration: none;
+}
+
+@media screen and (max-width: 303px) {
+
+ html {
+  font-size: 10px;
+ }
+ main{
+  grid-column: 1/4;
+ }
+ .logo{
+  display: none;
+ }
+ main>div:first-child{
+  display: flex;
+ }
+ .left, .right {
+  display: none;
+ }
+ .modalauth {
+  width: 63%;
+ }
+
+ .modalauth:target {
+  top: 3rem;
+ }
+
+ .modalreg {
+  top: 3rem;
+  width: 100%;
+  right: -100%;
+  z-index: 101;
+ }
+
+ .modalreg:target {
+  right: 0;
+ }
+
+ .writeus, .wrsaler {
+  left: 5%;
+  width: 90%;
+ }
+ .saleinfo>div:first-child p:first-child {
+  font-size: 0.7rem;
+ }
+ .saleinfo>div:first-child p:last-child {
+  font-size: 0.7rem;
+ }
+ .saleinfo>div:last-child a
+ {
+  font-size: 0.7rem;
+ }
+ .galmenu img{
+  width: 1.5rem;
+ }
+ .galmain>div img {
+  width: 8rem;
+ }
+ .social a{
+  transform: scale(0.3);
+ }
+ .addprodsec {
+  width: 100%;
+ }
+ .addlotsec {
+  width: 100%;
+ }
+
+ .addprodsec select, .addprodsec input[type='text'],  .addprodsec input[type='number'], .addprodsec input[type='file'],
+ .addlotsec select, .addlotsec input[type='text'],  .addlotsec input[type='number'], .addlotsec input[type='file']
+{
+  font-size: 0.7rem;
+ }
+}
+@media screen and (min-width: 304px) and (max-width: 374px ) {
+ html {
+  font-size: 15px;
+ }
+ .headsearch>input[type='search'] {
+  width: 100%;
+ }
+.logo{
+ display: none;
+}
+ main>div:first-child{
+  display: flex;
+ }
+
+ .left, .right {
+  display: none;
+ }
+
+ main {
+  grid-column: 1/4;
+ }
+ .saleinfo>div:first-child p:first-child {
+  font-size: 1rem;
+ }
+ .saleinfo>div:first-child p:last-child {
+  font-size: 0.7rem;
+ }
+ .saleinfo>div:last-child a
+ {
+  font-size: 0.7rem;
+ }
+ .galmenu img{
+   width: 2rem;
+  }
+ .galmain>div img {
+  width: 10rem;
+ }
+ .modalauth {
+  width: 63%;
+ }
+
+ .modalauth:target {
+  top: 3rem;
+ }
+
+ .modalreg {
+  top: 3rem;
+  width: 100%;
+  right: -100%;
+  z-index: 101;
+ }
+
+ .modalreg:target {
+  right: 0;
+ }
+
+ .writeus, .wrsaler {
+  left: 5%;
+  width: 90%;
+ }
+.social a{
+  transform: scale(0.5);
+ }
+ .addprodsec {
+  width: 100%;
+ }
+ .addlotsec {
+  width: 100%;
+ }
+}
+
+@media screen and (min-width: 375px) and (max-width: 405px){
+ html {
+  font-size: 15px;
+ }
+ .headsearch>input[type='search'] {
+  width: 100%;
+ }
+ .logo{
+  display: none;
+ }
+ main>div:first-child{
+  display: flex;
+ }
+ .left, .right {
+  display: none;
+ }
+
+ main, footer {
+  grid-column: 1/4;
+ }
+ .saleinfo>div:first-child p:first-child {
+  font-size: 1rem;
+ }
+ .saleinfo>div:first-child p:last-child {
+  font-size: 0.7rem;
+ }
+ .saleinfo>div:last-child a
+ {
+  font-size: 0.7rem;
+ }
+ .galmenu img{
+  width: 2rem;
+ }
+ .galmain>div img {
+  width: 10rem;
+ }
+
+ .modalauth {
+  width: 63%;
+ }
+
+ .modalauth:target {
+  top: 3rem;
+ }
+
+ .modalreg {
+  top: 3rem;
+  width: 60%;
+  right: -100%;
+  z-index: 101;
+ }
+
+ .modalreg:target {
+  right: 0;
+ }
+
+ .writeus, .wrsaler{
+  left: 5%;
+  width: 90%;
+ }
+ .social a{
+  transform: scale(0.5);
+ }
+ .productcard img {
+  width: 10rem;
+ }
+ .addprodsec {
+  width: 100%;
+ }
+ .addlotsec {
+  width: 100%;
+ }
+}
+
+@media screen and (min-width: 406px) and (max-width: 426px) {
+ html {
+  font-size: 13px;
+ }
+ .headsearch>input[type='search'] {
+  width: 100%;
+ }
+ .logo{
+  display: none;
+ }
+ main>div:first-child{
+  display: flex;
+ }
+ .left, .right {
+  display: none;
+ }
+
+ main, footer {
+  grid-column: 1/4;
+ }
+
+ .modalauth {
+  width: 63%;
+ }
+
+ .modalauth:target {
+  top: 3rem;
+ }
+
+ .modalreg {
+  top: 3rem;
+  width: 60%;
+  right: -100%;
+  z-index: 101;
+ }
+
+ .modalreg:target {
+  right: 0;
+ }
+
+ .writeus, .wrsaler {
+  left: 5%;
+  width: 90%;
+ }
+ .social a{
+  transform: scale(0.5);
+ }
+.addprodsec {
+ width: 100%;
+}
+.addlotsec {
+ width: 100%;
+}
+}
+
+@media screen and (min-width: 427px) and (max-width: 474px){
+ html{
+  font-size: 12px;
+ }
+ .modalauth {
+  width: 45%;
+  left: 27%;
+ }
+
+
+ .modalreg {
+  width: 60%;
+  right: -100%;
+ }
+
+ .modalreg:target {
+  right: 20%;
+ }
+
+ .writeus, .wrsaler {
+  left: 10%;
+  width: 80%;
+ }
+ .social a{
+  transform: scale(0.6);
+ }
+}
+
+@media screen and (min-width: 475px) and (max-width: 551px){
+html{
+ font-size: 12px;
+}
+ .modalauth {
+  width: 45%;
+  left: 27%;
+ }
+ .modalreg {
+  width: 60%;
+  right: -100%;
+ }
+
+ .modalreg:target {
+  right: 20%;
+ }
+
+ .writeus, .wrsaler {
+  left: 15%;
+  width: 70%;
+ }
+ .productcard img {
+  width: 10rem;
+ }
+ .social a{
+  transform: scale(0.6);
+ }
+}
+
+@media screen and (min-width: 552px) and (max-width: 600px) {
+ html {
+  font-size: 12px;
+ }
+ .modalauth {
+  width: 45%;
+  left: 27%;
+ }
+ .modalreg {
+  width: 60%;
+  right: -100%;
+ }
+
+ .modalreg:target {
+  right: 20%;
+ }
+
+ .writeus, .wrsaler{
+  left: 15%;
+  width: 70%;
+ }
+ .social a{
+  transform: scale(0.6);
+ }
+}
+
+@media screen and (min-width: 601px) and (max-width: 676px) {
+ html {
+  font-size: 12px;
+ }
+ .modalauth {
+  width: 35%;
+  left: 33%;
+ }
+ .modalreg {
+  width: 55%;
+  right: -100%;
+ }
+
+ .modalreg:target {
+  right: 22%;
+ }
+
+ .writeus, .wrsaler {
+  left: 17%;
+  width: 65%;
+ }
+ .productcard img {
+  width: 9rem;
+ }
+ .social a{
+  transform: scale(0.6);
+ }
+}
+
+@media screen and (min-width: 677px) and (max-width: 767px) {
+ html {
+  font-size: 13px;
+ }
+ .modalauth {
+  width: 35%;
+  left: 33%;
+ }
+ .modalreg {
+  width: 55%;
+  right: -100%;
+ }
+
+ .modalreg:target {
+  right: 22%;
+ }
+
+ .writeus, .wrsaler{
+  left: 17%;
+  width: 65%;
+ }
+ .social a{
+  transform: scale(0.6);
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ html {
+  font-size: 15px;
+ }
+ .modalauth {
+  width: 30%;
+  left: 35%;
+ }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px){
+ html {
+  font-size: 30px;
+ }
+ .modalauth>form input, .modalreg>form input, .modalreg>form select,
+ .writeus>form input, .writeus>form textarea,
+ .wrsaler>form input, .wrsaler>form textarea{
+  font-size: 0.7rem;
+ }
+ .social a {
+  transform: scale(1.05);
+ }
+ .addprodsec select, .addprodsec input[type='text'],  .addprodsec input[type='number'], .addprodsec input[type='file'],
+ .addlotsec select, .addlotsec input[type='text'],  .addlotsec input[type='number'], .addlotsec input[type='file']
+ {
+  font-size: 0.8rem;
+ }
+
+}
+
+@media screen and (min-width: 1920px){
+ html {
+  font-size: 40px;
+ }
+ .modalauth>form input, .modalreg>form input, .modalreg>form select,
+ .writeus>form input, .writeus>form textarea,
+ .wrsaler>form input, .wrsaler>form textarea{
+  font-size: 0.7rem;
+ }
+ .addprodsec select, .addprodsec input[type='text'],  .addprodsec input[type='number'], .addprodsec input[type='file'],
+ .addlotsec select, .addlotsec input[type='text'],  .addlotsec input[type='number'], .addlotsec input[type='file']
+
+ {
+  font-size: 1rem;
+ }
+ .social a {
+  transform: scale(1.1);
+ }
+}

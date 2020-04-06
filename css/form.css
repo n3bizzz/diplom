@@ -1,0 +1,136 @@
+.headsearch {
+    margin: 0.5rem;
+}
+.headsearch>input[type='search']{
+    width: 70%;
+}
+.headsearch img {
+    height: 1rem;
+}
+
+.headsearch>button {
+    background-color: gold;
+    padding: 0.4rem;
+    height: 2rem;
+    width: 2.5rem;
+    border: 0.1rem gold solid;
+    border-radius: 0 0.5rem 0.5rem 0;
+
+
+}
+
+
+.headsearch>button:hover {
+    background-color: orange;
+    border-color: orange;
+}
+.headsearch>input {
+    padding-left: 0.5rem;
+    height: 2rem;
+    border: 0.1rem gold solid;
+    border-right: none;
+    border-radius: 1rem 0 0 1rem;
+    font-size: 0.8rem;
+}
+form :focus {
+    outline: none;
+}
+form :required + span:before
+{
+    content: "\2718";
+    font-weight: bolder;
+    color: red;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+}
+
+form :required:focus:valid + span:before,
+form :required:not(:focus):valid + span:before
+{
+    content: "\2714";
+    font-weight: bolder;
+    color: green;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+}
+
+
+.modalauth input[type="submit"], .modalreg input[type="submit"], .writeus input[type='submit'],
+.wrsaler input[type='submit'], .addprodsec input[type='submit'], .addlotsec input[type='submit']{
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background: gold;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bolder;
+}
+
+form :focus {
+    outline: none;
+}
+
+.modalauth>form, .modalreg>form, .writeus>form, .wrsaler>form, .addprodsec>form, .addlotsec>form{
+    background-color: deepskyblue;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 0.75rem;
+}
+.modalauth>form a {
+    color: white;
+}
+.modalauth>form input, .modalreg>form input, .modalreg>form select, .writeus>form input, .writeus>form textarea,
+.wrsaler>form input, .wrsaler>form textarea, .addprodsec>form input, .addprodsec>form select, .addprodsec>form textarea,
+.addlotsec>form input, .addlotsec>form select, .addlotsec>form textarea
+{
+    border: 0.05rem gold solid;
+
+}
+.modalauth>form input::placeholder, .modalreg>form input::placeholder, .modalreg>form select,
+.writeus>form input::placeholder, .writeus>form textarea::placeholder,
+.wrsaler>form input::placeholder, .wrsaler>form textarea::placeholder,
+.addprodsec>form input::placeholder, .addprodsec>form select, .addprodsec>form textarea::placeholder,
+.addlotsec>form input::placeholder, .addlotsec>form select, .addlotsec>form textarea::placeholder
+{
+    color: deepskyblue;
+}
+
+.filtervalues input[type='number']
+{
+    color: gray;
+    border: 0;
+    text-align: center;
+}
+.writeus>form textarea, .wrsaler>form textarea, .addprodsec>form textarea, .addlotsec>form textarea{
+    width: 90%;
+    height: 4rem;
+    resize: none;
+}
+.buyrate label
+{
+    padding: 0.1rem;
+    color: orange;
+    font-size: 0.7rem;
+}
+.buyrate input[type='number'] {
+    width: 20%;
+    border: none;
+    color: orange;
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+.buyrate input[type='submit'] {
+    border: 0;
+    padding: 0.2rem;
+    background-color: whitesmoke;
+    color: gray;
+    border-radius: 0.25rem;
+    font-size: 0.6rem;
+    transition: all 0.4s;
+    display: inline-block;
+}
+.buyrate input[type='submit']:hover {
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,27 @@
+body
+{
+    display:  grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+footer {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4 ;
+}
+
+.left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+.right {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}

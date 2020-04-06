@@ -1,0 +1,301 @@
+main {
+    padding-top: 5rem;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+main>nav
+{
+    border-bottom: 0.4rem solid dodgerblue;
+}
+main>div:first-child{
+    display: none;
+    margin-bottom: 1rem;
+}
+.addprod, .addlot {
+    background-color: deepskyblue;
+    border-radius: 0.7rem;
+    margin: 0;
+    transition: all 0.2s;
+}
+.addprod>a, .addlot>a
+{
+    margin: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: white;
+    display: block;
+    padding: 0.2rem;
+}
+.addprod:hover, .addlot:hover {
+    background-color: orange;
+}
+.notpage>a{
+    display: block;
+    color: darkgray;
+    font-weight: bold;
+    border-radius: 0.6rem 0.6rem 0 0 ;
+    background-color: whitesmoke;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.notpage>a:hover
+{
+ color: white;
+ background-color: deepskyblue;
+}
+.page>a
+{
+    display: block;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.6rem 0.6rem 0 0 ;
+    background-color: dodgerblue;
+}
+.page>a, .notpage>a {
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+ .marketwindow {
+     background-color: white;
+     border-radius: 0 0 0.6rem 0.6rem;
+ }
+.filter
+{
+    display: none;
+    background-color: white;
+    font-size: 0.6rem;
+    text-align: center;
+}
+.filtername {
+     border-bottom: 0.05rem solid gold;
+     font-weight: bold;
+     background-color: deepskyblue;
+     color: white;
+ }
+.filtername>p {
+    margin: 0.2rem;
+}
+
+ .filtervalues{
+     border-bottom: 0.05rem solid gold;
+     color: gray;
+}
+
+.filterbtm {
+    display: block;
+    background-color: white;
+    text-align: right;
+}
+.filter:target {display: flex}
+ .filterbtm img{
+     display: inline-block;
+     background-color: whitesmoke;
+     height: 1.5rem;
+     border-radius: 0.2rem;
+     padding: 0.1rem;
+     margin: 0.4rem;
+ }
+.filterbtm>a:hover img{
+    background-color: deepskyblue;
+}
+.productcard {
+    margin-top: 0.5rem;
+}
+.productcard img /*ужно разобраться с размером карточек*/
+{
+    height: auto;
+    width: 8rem; /*желательно что бы картинки были одного размера*/
+}
+.productcard>a {
+    position: relative;
+    z-index: 98;
+    margin: 1rem;
+    padding: 0.2rem;
+    box-shadow: 0 0 0.3rem 0.05rem rgba(30, 144, 255, 0.6);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.productcard>a div {
+    margin: 0;
+    padding: 0;
+ }
+
+.productcard>a:hover {
+    box-shadow: 0 0 0.3rem 0.1rem rgba(255, 215, 0, 1);
+    transform: scale(1.1);
+}
+.productcard>a div :nth-child(2){
+    margin: 0.1rem;
+    font-size: 0.7rem;
+    color: dodgerblue;
+    font-weight: bold;
+}
+.productcard>a div :nth-child(3){
+    margin: 0.1rem;
+    font-weight: bolder;
+    font-size: 0.5rem;
+    color: green;
+}
+.productcard>a  p:last-child{
+    margin: 0.1rem;
+    font-weight: bold;
+    font-size: 0.6rem;
+    color: gold;
+}
+.plusbtm {
+    padding-bottom: 0.5rem;
+}
+.plusbtm img {
+    height: 2.5rem;
+    box-shadow: inset 0 0 0.3rem 0.05rem rgba(30, 144, 255, 0.6);
+    border-radius: 50% 50%;
+    transition: all 0.6s;
+
+}
+.plusbtm p
+{
+    margin: 0;
+    font-size: 0.6rem;
+    color: deepskyblue;
+}
+.plusbtm>a{
+    display: inline-block;
+}
+.plusbtm>a:hover img{
+    background-color: dodgerblue;
+    transform: rotate(360deg);
+}
+
+.galmenu img{
+    width: 3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+
+}
+.galmenu>div{
+    background-color: white;
+    border-radius: 0.2rem;
+    transition: all 0.5s;
+}
+.galmenu>div:hover{
+    transform: scale(1.1);
+}
+.galmain>div
+{
+    overflow: hidden;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.galmain>div img {
+    width: 16rem;
+    border-radius: 0.2rem;
+    transition: all 0.5s;
+}
+.galmain>div img:hover
+{
+    transform: scale(1.2);
+}
+.saleinfo {
+    margin: 1rem;
+}
+.gallery {
+    padding: 0.4rem;
+    margin: 1rem;
+    background-color: whitesmoke;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.3rem 0.05rem rgba(30, 144, 255, 0.6);
+    transition: all 0.6s;
+}
+.gallery:hover {
+    box-shadow: 0 0 0.3rem 0.1rem rgba(255, 215, 0, 1);
+}
+
+.prpage {
+    background-color: white;
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+.saleinfo>div:first-child p:first-child {
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 0.2rem;
+}
+.saleinfo>div:first-child p:nth-child(2){
+    color: green;
+    margin: 0;
+    font-size: 0.7rem;
+}
+.saleinfo>div:first-child p:last-child {
+    color: gold;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 0;
+}
+.saleinfo>div:nth-child(2){
+    margin: 0.4rem;
+}
+.saleinfo>div:nth-child(2) p{
+    margin: 0;
+    font-size: 0.7rem;
+    color: darkgray;
+}
+.saleinfo>div:last-child {
+    margin-top: 1rem;
+}
+.saleinfo>div:last-child a
+{
+    display: block;
+    color: white;
+    font-weight: bolder;
+    background-color: deepskyblue;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+}
+.saleinfo>div:last-child a:hover
+{
+   background-color: orange;
+}
+.prinfo {
+    background-color: whitesmoke;
+    margin: 1rem;
+    border-radius: 0.6rem;
+
+}
+.prinfo>div:first-child p{
+    font-weight: bolder;
+    color: deepskyblue;
+}
+.prinfo>div:last-child {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.prinfo>div:last-child p{
+    text-align: justify;
+    font-size: 0.7rem;
+}
+.aucinfo {
+    background-color: white;
+}
+.aucinfo p
+{
+    margin: 0.2rem;
+}
+.aucinfo p:first-child {
+    color: orange;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.aucinfo p:nth-child(2){
+    font-size: 0.8rem;
+    color: darkgray;
+}
+.aucinfo p:nth-child(3){
+    font-size: 0.8rem;
+    color: darkgray;
+}
